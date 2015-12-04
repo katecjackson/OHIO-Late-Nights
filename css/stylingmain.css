@@ -1,10 +1,15 @@
+/* ======== old background color - #808080  ======== */
+
+
 html {
-    background-color: #4a4c49;
+    background-color: #0f1739 ;
 }
 
 body {
     margin: 10px;
     border-radius: 25px;
+    max-width: 900px;
+  align-items: center;
 }
 
 
@@ -41,6 +46,15 @@ header {
 }
 
 
+
+/* ======== mobile nav ======== */
+
+.mobile-nav {
+text-decoration: none;
+    padding: 10px;
+}
+
+
 /* ======= main content ======= */
 
 
@@ -66,12 +80,14 @@ p {
 li {
     
     padding-left: 20px;
+    text-align: center;
 }
 
 
 ul {
     background-color: white;
     border-radius: 5px;
+    padding: 10px 0 10px 0;
 }
 
 
@@ -88,35 +104,44 @@ ul {
     
 }
 
-/* ===== tablet ===== */
-@media only screen and (min-width: 500px) 
-    and (max-width: 999px) {
-        
-        
-}
+
+
+
+
 /* ===== desktop ===== */
 @media only screen and (min-width: 1000px) {
     
     .hamburger img{
         display: none;
     }
+    
+    .mobile-nav {
+        display: none;
+    }
 }
 
 /* ===== mobile ===== */
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 767px) {
 	
     .main-nav{
         display: none;
     }
     
+    .footer-nav{
+    display: none;
+    }
     
-}
 
 
-/* ===== desktop ===== */
+/* ===== tablet ===== */
 @media only screen and (min-width: 768px) {
     
     .hamburger img{
         display: none;
+}
+    
+    .mobile-nav {
+        display: none;
+    }
     
 }

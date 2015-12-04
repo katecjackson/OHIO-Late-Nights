@@ -8,9 +8,10 @@ html {
 body {
     margin: 10px;
     border-radius: 25px;
-    max-width: 900px;
+    max-width: 1000px;
   align-items: center;
 }
+
 
 
 /*  ======= Header =======  */
@@ -30,16 +31,27 @@ header {
 
 
 /* ======= navigation ======= */
-.main-nav {
+
+.active { color: coral;
+}
+
+#main-nav {
     margin: 5px;
+    display: inline-block;
 }
 
-.main-nav a {
+#main-nav li {
     padding: 15px;
-    text-decoration: none;   
+    text-decoration: none; 
+    display: inline;
+    margin: 70px;
 }
 
-.hamburger img {
+#main-nav a{
+text-decoration: none;
+}
+
+#hamburger img {
     max-width: 40px;
     float: right;
     padding: 20px;
@@ -49,7 +61,7 @@ header {
 
 /* ======== mobile nav ======== */
 
-.mobile-nav {
+#mobile-nav {
 text-decoration: none;
     padding: 10px;
 }
@@ -59,15 +71,94 @@ text-decoration: none;
 
 
 
-h2 {
-   text-align: center;
+.activities{
+
+border-radius: 5px;
+    padding-top: 5px;
+    padding-bottom: 150px;
+    margin-bottom: 100px;
+    padding-left: 20px;
+   
+}
+
+
+
+
+.act1 img{
+max-width: 100px;
+}
+.act1 {float: left;
+background-color: white;
+  padding: 20px;
+margin: 10px;
+}
+
+
+.act2 img{
+max-width: 100px;
+}
+.act2 {float: left;
+background-color: white;
+  padding: 20px;
+margin: 10px;
+}
+
+
+.act3 img{
+max-width: 100px;
+}
+.act3 {float: left;
+background-color: white;
+  padding: 20px;
+margin: 10px;
+}
+
+
+.act4 img{
+max-width: 100px;
+}
+.act4 {float: left;
+background-color: white;
+  padding: 20px;
+margin: 10px;
+}
+
+
+.act5 img{
+max-width: 100px;
+}
+.act5 {float: left;
+background-color: white;
+    padding: 20px;
+margin: 10px;
+}
+
+.act6 {float: left;
+background-color: white;
+    padding: 20px;
+margin: 10px;
+    padding-right: 42px;
+    padding-bottom: 100px;
+    padding-top: 40px;
+}
+<div style="clear: both;"></div>
+
+
+
+
+
+.about {
+    background-color: white;
+border-radius: 5px;
+    padding-top: 5px;
 }
 
 
 h3{
     background-color: white;
+    padding-left: 10px;
+    text-align: left;
     border-radius: 5px;
-    text-align: center;
 }
 
 p {
@@ -92,13 +183,13 @@ ul {
 
 
 /* ======= footer navigation ======= */
-.footer-nav {
+#footer-nav {
     margin: 5px;
     background-color: white;
     border-radius: 5px;
 }
 
-.footer-nav a {
+#footer-nav a {
     padding: 15px;
     text-decoration: none; 
     
@@ -108,29 +199,57 @@ ul {
 
 
 
+
+
 /* ===== desktop ===== */
 @media only screen and (min-width: 1000px) {
     
-    .hamburger img{
+    #hamburger img{
         display: none;
     }
     
-    .mobile-nav {
+    #mobile-nav {
         display: none;
     }
 }
 
+
+
 /* ===== mobile ===== */
 @media only screen and (max-width: 767px) {
 	
-    .main-nav{
+    #main-nav{
         display: none;
     }
     
-    .footer-nav{
+    #footer-nav{
     display: none;
     }
     
+    #mobile-nav{
+        display: inline-block;
+        text-align: left;
+    }
+    
+   
+    
+    .js #mobile-nav {
+    display:none;
+    }
+
+    
+    .js .slicknav_main-nav {
+    display:block;
+    }
+    
+    $('#mobile-nav').slicknav('open');
+    
+    
+    
+    
+}
+
+
 
 
 /* ===== tablet ===== */
@@ -140,7 +259,7 @@ ul {
         display: none;
 }
     
-    .mobile-nav {
+    #mobile-nav {
         display: none;
     }
     

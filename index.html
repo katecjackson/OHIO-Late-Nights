@@ -12,23 +12,35 @@
 
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
+        
+        <!--- my links --->
+        <link rel="stylesheet" type="text/css" href="css/stylingmain.css">
+        <link rel="dropdownmenu" type="text/scss" href="SlickNav/scss/slicknav.scss">
+        <script src="SlickNav/jquery.slicknav.js"></script>
+        
+        
+        
+        
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
     <body>
+        
+        
+        <div id="wrapper">
+        
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
         <!-- Add your site or application content here -->
         
-        <div class="hamburger">
-        <a href="links/menu.svg">
+        <div id="hamburger">
+        
         <img src="links/menu.svg" alt="">
-        </a>
             
             </div>
         
-        <link rel="stylesheet" type="text/css" href="css/stylingmain.css">
+        
         
       <header>
       <div class="main-image">
@@ -37,19 +49,19 @@
         
         <!-- Navigation -->
         
-        <div class="main-nav">
-    <a href="index.html">Home</a>    
-    <a href="About.html">About</a>
-    <a href="Gallery.html">Gallery</a>
-    <a href="Contact.html">Contact</a>
+        <div id="main-nav">
+    <li><a href="#" class="active">Home</a></li>    
+    <li><a href="About.html">About</a></li>
+    <li><a href="Gallery.html">Gallery</a></li>
+    <li><a href="Contact.html">Contact</a></li>
             </div>
           
           
-        <div class="mobile-nav">
-    <a href="index.html">Home</a>    
-    <a href="About.html">About</a>
-    <a href="Gallery.html">Gallery</a>
-    <a href="Contact.html">Contact</a>
+        <div id="mobile-nav">
+    <li><a href="index.html">Home</a></li>    
+    <li><a href="About.html">About</a></li>
+    <li><a href="Gallery.html">Gallery</a></li>
+    <li><a href="Contact.html">Contact</a></li>
             </div>
         
         </header>  
@@ -57,32 +69,58 @@
         
         
         
-        <h2>OHIO Late Nights</h2>
+    
         
-        
+            
+            <div class="about">
+        <h3> About</h3>
         <p>
+        
         The Department of Housing and Residence Life presents OHIO Late Nights, an alcohol alternative program. Residents living on Ohio University's campus can attend this event for a fun filled evening. Late Nights occurs every Saturday satarting September 5th, 2015. The event happens rain or shine from 9 pm - 1 am at our new facility, the Living Learning Center, on South Green.
         </p>
         
-        <h3>Activities include:</h3>
+                </div>
+                
+        <div class="activities"> <h3>Activities include:</h3>
         
-        <ul>
+            <!--- icons from (www.coucouicons.com) --->
             
-        <li>Games</li>
-        <li>Karoke</li>
-        <li>Music</li>
-        <li>Movies</li>
-        <li>Snacks</li>
-        <li>and More</li>
+       <div class="act1">
+            <img src="/links/Icons-07.png">
+        <h4>Games </h4>
+           </div>
+           
+            <div class="act2">
+            <img src="links/Icons-04.png">
+        <h4>Karoke </h4>
+            </div>
+            
+            <div class="act3">
+            <img src="links/Icons-06.png">
+        <h4>Music </h4>
+            </div>
+            
+            <div class="act4">
+            <img src="links/Icons-08.png">
+        <h4>Movies </h4>
+            </div>
         
-        </ul>
+            <div class="act5">
+            <img src="links/Icons-05.png">
+        <h4>Snacks </h4>
+            </div>
+    
+          <div class="act6">  
+        <h4>and more! </h4>
+            </div>
         
         
+        </div>
         
         
         <!-- Navigation -->
         
-        <div class="footer-nav">
+        <div id="footer-nav">
     <a href="index.html">Home</a>    
     <a href="About.html">About</a>
     <a href="Gallery.html">Gallery</a>
@@ -109,5 +147,22 @@
             r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
             ga('create','UA-XXXXX-X','auto');ga('send','pageview');
         </script>
+        
+       <script> 
+        $('#mobile-nav').slicknav({
+		prependTo:'#hamburger' });
+           </script>
+        
+        
+        <script>
+	$(function(){
+		$('#mobile-nav').slicknav();
+	});
+</script>
+        
+        
+        </div>
+        
+        
     </body>
 </html>
